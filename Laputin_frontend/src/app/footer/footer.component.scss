@@ -1,0 +1,19 @@
+p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+hr {
+    background-color: purple;
+    height: 5px;
+    margin-top: 20px;
+}
+.footer-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+.detail-delimiter {
+    display: none;
+    }

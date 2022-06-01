@@ -1,0 +1,46 @@
+<h1 mat-dialog-title>{{title}}</h1>
+<div mat-dialog-content>
+  <form #f [formGroup]="sensorForm">
+    <div class="example-container">
+      <mat-form-field appearance="fill">
+        <mat-label>Enter sensor's name</mat-label>
+        <input formControlName="name" matInput placeholder="Name">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+      <mat-label>Enter sensor's type</mat-label>
+      <mat-select formControlName="type" placeholder="Type">
+        <mat-option value="consumption">Consumption</mat-option>
+        <mat-option value="temperature">Temperature</mat-option>
+        <mat-option value="pressure">Pressure</mat-option>
+      </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Enter sensor's description</mat-label>
+        <textarea formControlName="description" matInput placeholder="Description" required></textarea>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Enter sensor's dimension</mat-label>
+        <input formControlName="dimension" matInput placeholder="Dimension" required>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Enter sensor's value</mat-label>
+        <input formControlName="value" matInput type="number" placeholder="Value" required>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Enter sensor's unitId</mat-label>
+        <input formControlName="unitId" matInput type="number" placeholder="UnitId" required>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Enter sensor's unitName</mat-label>
+        <input formControlName="unitName" matInput placeholder="UnitName" required>
+      </mat-form-field>
+  
+    </div>
+  </form>
+</div>
+
+<div mat-dialog-action [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button style="margin-left: 8px" mat-raised-button color="accent" (click)="addSensor()">{{actionBtn}}</button>
+</div>
+

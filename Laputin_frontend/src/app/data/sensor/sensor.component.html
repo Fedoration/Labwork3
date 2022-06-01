@@ -1,0 +1,16 @@
+<mat-card class="example-card">
+    <mat-card-subtitle>Sensor Card</mat-card-subtitle>
+    <mat-card-title>ID: {{ sensor?.id}}</mat-card-title>
+    <mat-card-content>
+      <p>Name: {{ sensor?.name }}</p>
+      <p>Type: {{ sensor?.type }}</p>
+      <p>Description: {{ sensor?.description }}</p>
+      <p>Dimension: {{ sensor?.dimension }}</p>
+      <p>Value: {{ sensor?.value }}</p>
+      <p>UnitID: {{ sensor?.unitId }}</p>
+      <p>UnitName: {{ sensor?.unitName }}</p>
+    </mat-card-content>
+    <mat-card-footer>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </mat-card-footer>
+  </mat-card>
